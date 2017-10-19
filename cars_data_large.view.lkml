@@ -111,4 +111,9 @@ view: cars_data_large {
     type: count
     drill_fields: [id, name]
   }
+
+  measure: revenue {
+    type: sum
+    sql: ${price} ;;
+  }
 }
