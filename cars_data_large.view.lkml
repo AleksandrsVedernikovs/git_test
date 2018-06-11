@@ -5,7 +5,7 @@ view: cars_data_large {
     primary_key: yes
     type: number
     sql: ${TABLE}.id ;;
-    value_format: "0"
+   value_format: "0"
   }
 
   dimension: brand {
