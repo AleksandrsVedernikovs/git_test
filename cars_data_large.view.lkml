@@ -12,8 +12,6 @@ view: cars_data_large {
     sql: ${TABLE}.brand ;;
   }
 
-
-
   dimension_group: date_created {
     type: time
     timeframes: [
@@ -97,11 +95,6 @@ view: cars_data_large {
   dimension: price {
     type: number
     sql: ${TABLE}.price ;;
-  }
-
-  measure: max_price {
-    type: max
-    sql: ${price} ;;
   }
 
   dimension: vehicle_type {
