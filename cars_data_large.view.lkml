@@ -104,6 +104,11 @@ view: cars_data_large {
     sql: ${price} ;;
   }
 
+  measure: min_price {
+    type:  min
+    sql: ${price} ;;
+  }
+
   dimension: vehicle_type {
     type: string
     sql: ${TABLE}.vehicle_type ;;
